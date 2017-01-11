@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $("#blanks form").submit(function(event) {
+// blanks is a class in your html not an id. This is why it wasn't working
+  $(".blanks form").submit(function(event) {
     var person1Input = $("input#person1").val();
     var verb1Input = $("input#verb1").val();
     var placeInput = $("input#place").val();
